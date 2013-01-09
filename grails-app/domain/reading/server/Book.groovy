@@ -1,9 +1,9 @@
 package reading.server
 
 class Book {
-    String code
-    String name
-    String iconUrl;
+    String bookNumber
+    String bookName
+    String bookIconUrl;
     String detailText;
     String bookSize;
     FileEntity bookFile;

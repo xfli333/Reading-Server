@@ -1,6 +1,6 @@
 package reading.server
 
-import org.springframework.dao.DataIntegrityViolationException
+import org.apache.commons.io.IOUtils
 
 class FileEntityController {
 

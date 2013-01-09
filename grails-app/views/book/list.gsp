@@ -26,15 +26,15 @@
 					
 						<th><g:message code="book.bookFile.label" default="Book File" /></th>
 					
+						<g:sortableColumn property="bookIconUrl" title="${message(code: 'book.bookIconUrl.label', default: 'Book Icon Url')}" />
+					
+						<g:sortableColumn property="bookName" title="${message(code: 'book.bookName.label', default: 'Book Name')}" />
+					
+						<g:sortableColumn property="bookNumber" title="${message(code: 'book.bookNumber.label', default: 'Book Number')}" />
+					
 						<g:sortableColumn property="bookSize" title="${message(code: 'book.bookSize.label', default: 'Book Size')}" />
 					
-						<g:sortableColumn property="code" title="${message(code: 'book.code.label', default: 'Code')}" />
-					
 						<g:sortableColumn property="dateCreated" title="${message(code: 'book.dateCreated.label', default: 'Date Created')}" />
-					
-						<g:sortableColumn property="detailText" title="${message(code: 'book.detailText.label', default: 'Detail Text')}" />
-					
-						<g:sortableColumn property="iconUrl" title="${message(code: 'book.iconUrl.label', default: 'Icon Url')}" />
 					
 					</tr>
 				</thead>
@@ -44,15 +44,15 @@
 					
 						<td><g:link action="show" id="${bookInstance.id}">${fieldValue(bean: bookInstance, field: "bookFile")}</g:link></td>
 					
+						<td>${fieldValue(bean: bookInstance, field: "bookIconUrl")}</td>
+					
+						<td>${fieldValue(bean: bookInstance, field: "bookName")}</td>
+					
+						<td>${fieldValue(bean: bookInstance, field: "bookNumber")}</td>
+					
 						<td>${fieldValue(bean: bookInstance, field: "bookSize")}</td>
 					
-						<td>${fieldValue(bean: bookInstance, field: "code")}</td>
-					
 						<td><g:formatDate date="${bookInstance.dateCreated}" /></td>
-					
-						<td>${fieldValue(bean: bookInstance, field: "detailText")}</td>
-					
-						<td>${fieldValue(bean: bookInstance, field: "iconUrl")}</td>
 					
 					</tr>
 				</g:each>

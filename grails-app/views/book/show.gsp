@@ -32,20 +32,38 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${bookInstance?.bookIconUrl}">
+				<li class="fieldcontain">
+					<span id="bookIconUrl-label" class="property-label"><g:message code="book.bookIconUrl.label" default="Book Icon Url" /></span>
+					
+						<span class="property-value" aria-labelledby="bookIconUrl-label"><g:fieldValue bean="${bookInstance}" field="bookIconUrl"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${bookInstance?.bookName}">
+				<li class="fieldcontain">
+					<span id="bookName-label" class="property-label"><g:message code="book.bookName.label" default="Book Name" /></span>
+					
+						<span class="property-value" aria-labelledby="bookName-label"><g:fieldValue bean="${bookInstance}" field="bookName"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${bookInstance?.bookNumber}">
+				<li class="fieldcontain">
+					<span id="bookNumber-label" class="property-label"><g:message code="book.bookNumber.label" default="Book Number" /></span>
+					
+						<span class="property-value" aria-labelledby="bookNumber-label"><g:fieldValue bean="${bookInstance}" field="bookNumber"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${bookInstance?.bookSize}">
 				<li class="fieldcontain">
 					<span id="bookSize-label" class="property-label"><g:message code="book.bookSize.label" default="Book Size" /></span>
 					
 						<span class="property-value" aria-labelledby="bookSize-label"><g:fieldValue bean="${bookInstance}" field="bookSize"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${bookInstance?.code}">
-				<li class="fieldcontain">
-					<span id="code-label" class="property-label"><g:message code="book.code.label" default="Code" /></span>
-					
-						<span class="property-value" aria-labelledby="code-label"><g:fieldValue bean="${bookInstance}" field="code"/></span>
 					
 				</li>
 				</g:if>
@@ -64,24 +82,6 @@
 					<span id="detailText-label" class="property-label"><g:message code="book.detailText.label" default="Detail Text" /></span>
 					
 						<span class="property-value" aria-labelledby="detailText-label"><g:fieldValue bean="${bookInstance}" field="detailText"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${bookInstance?.iconUrl}">
-				<li class="fieldcontain">
-					<span id="iconUrl-label" class="property-label"><g:message code="book.iconUrl.label" default="Icon Url" /></span>
-					
-						<span class="property-value" aria-labelledby="iconUrl-label"><g:fieldValue bean="${bookInstance}" field="iconUrl"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${bookInstance?.name}">
-				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="book.name.label" default="Name" /></span>
-					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${bookInstance}" field="name"/></span>
 					
 				</li>
 				</g:if>

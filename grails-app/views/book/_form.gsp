@@ -2,12 +2,28 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'bookFile', 'error')} required">
-	<label for="bookFile">
-		<g:message code="book.bookFile.label" default="Book File" />
-		<span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'bookIconUrl', 'error')} ">
+	<label for="bookIconUrl">
+		<g:message code="book.bookIconUrl.label" default="Book Icon Url" />
+		
 	</label>
-	<g:select id="bookFile" name="bookFile.id" from="${reading.server.FileEntity.list()}" optionKey="id" required="" value="${bookInstance?.bookFile?.id}" class="many-to-one"/>
+	<g:textField name="bookIconUrl" value="${bookInstance?.bookIconUrl}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'bookName', 'error')} ">
+	<label for="bookName">
+		<g:message code="book.bookName.label" default="Book Name" />
+		
+	</label>
+	<g:textField name="bookName" value="${bookInstance?.bookName}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'bookNumber', 'error')} ">
+	<label for="bookNumber">
+		<g:message code="book.bookNumber.label" default="Book Number" />
+		
+	</label>
+	<g:textField name="bookNumber" value="${bookInstance?.bookNumber}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'bookSize', 'error')} ">
@@ -18,14 +34,6 @@
 	<g:textField name="bookSize" value="${bookInstance?.bookSize}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'code', 'error')} ">
-	<label for="code">
-		<g:message code="book.code.label" default="Code" />
-		
-	</label>
-	<g:textField name="code" value="${bookInstance?.code}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'detailText', 'error')} ">
 	<label for="detailText">
 		<g:message code="book.detailText.label" default="Detail Text" />
@@ -33,24 +41,6 @@
 	</label>
 	<g:textField name="detailText" value="${bookInstance?.detailText}"/>
 </div>
-
-<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'iconUrl', 'error')} ">
-	<label for="iconUrl">
-		<g:message code="book.iconUrl.label" default="Icon Url" />
-		
-	</label>
-	<g:textField name="iconUrl" value="${bookInstance?.iconUrl}"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: bookInstance, field: 'name', 'error')} ">
-	<label for="name">
-		<g:message code="book.name.label" default="Name" />
-		
-	</label>
-	<g:textField name="name" value="${bookInstance?.name}"/>
-</div>
-
-
 
 <div class="fieldcontain ${hasErrors(bean: fileEntityInstance, field: 'data', 'error')} required">
     <label for="data">
