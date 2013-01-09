@@ -6,6 +6,7 @@
         <webroots>
           <root url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/jquery-1.8.0/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/database-migration-1.1/grails-app/views" relative="/" />
+          <root url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/twitter-bootstrap-2.2.2/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -44,6 +45,10 @@
       <sourceFolder url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/resources-1.1.6/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/tomcat-2.1.1" />
+    <content url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/twitter-bootstrap-2.2.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/twitter-bootstrap-2.2.2/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/twitter-bootstrap-2.2.2/grails-app/taglib" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/webxml-1.4.1">
       <sourceFolder url="file://$USER_HOME$/.grails/2.1.1/projects/reading-server/plugins/webxml-1.4.1/src/groovy" isTestSource="false" />
     </content>
