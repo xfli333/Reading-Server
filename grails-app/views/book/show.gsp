@@ -123,8 +123,8 @@
                         <g:message code="book.bookFile.label" default="Book File"/></label>
 
                     <div class="property-value controls" aria-labelledby="bookFile-label">
-                        <g:link controller="fileEntity" name="bookFile" action="show"
-                                id="${bookInstance?.bookFile?.id}">${bookInstance?.bookFile?.fileName}</g:link>
+                        <g:link controller="fileEntity" name="bookFile" action="download"
+                                id="${bookInstance?.bookFile?.id}">${bookInstance?.bookFile?.fileName}</g:link> </br>
                     </div>
                 </div>
 

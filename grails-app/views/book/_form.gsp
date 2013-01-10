@@ -55,6 +55,18 @@
     </div>
 </div>
 
+<g:if test="${bookInstance?.bookFile}">
+    <div class="fieldcontain control-group">
+        <label class="control-label" for="data">
+            <g:message code="book.fileEntity.name.label" default="Current File"/>
+        </label>
+
+        <div class="controls">
+            <input type="text" value="${bookInstance?.bookFile?.fileName}" readonly="readonly"/>
+        </div>
+    </div>
+</g:if>
+
 <div class="fieldcontain control-group ${hasErrors(bean: fileEntityInstance, field: 'data', 'error')} required">
     <label class="control-label" for="data">
         <g:message code="book.fileEntity.data.label" default="Data"/>
@@ -62,7 +74,8 @@
     </label>
 
     <div class="controls">
-        <input type="file" id="data" name="data"/>
+       <input type="file" id="data" name="data"/>
     </div>
 </div>
+
 

@@ -51,6 +51,7 @@ class BookController {
 
     def edit(Long id) {
         def bookInstance = Book.get(id)
+        def fileEntityInstance = bookInstance.bookFile
         if (!bookInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'book.label', default: 'Book'), id])
             redirect(action: "list")
